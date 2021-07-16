@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delay</title>
+</head>
+<body>
+    <button>Click</button>
+    <div class="mensagem"> Olá Brasil!</div>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script>
+
+        var button = $("button");
+        var mensagem = $ (".mensagem");
+        button.on("click", function(){
+            mensagem.delay(2000).fadeOut();
+
+            //mensagem.delay("slow").fadeOut(); //fast também
+            
+        })
+    </script>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        var pessoa = {
+            nome: "Leandro",
+            idade: 34,
+            profissao: 'autonomo',
+            cidade: 'sp'
+        }
+
+        function novapessoaum(nome, idade, profissao, cidade){
+            pessoa.nome = nome;
+            pessoa.cidade = cidade;
+            pessoa.idade = idade;
+            pessoa.profissao = profissao;
+        }
+
+        function novapessoa(novoObjetoPessoa){
+            if(typeof novoObjetoPessoa == 'object'){
+                pessoa = novoObjetoPessoa;
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+
+        novapessoaum('Douglas', 34, 'advogado', 'sp')
+
+        console.log(pessoa.nome)
+
+        novapessoa({nome: 'Ricardo', idade: 39, profissao: 'Arquiteto', cidade: 'Amazonas'})
+        console.log(pessoa)
+
+
+        function testeparametros(){
+            console.log(arguments);
+            
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>

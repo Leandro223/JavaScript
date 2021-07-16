@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Seletores</title>
+</head>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore temporibus consequatur eligendi velit doloribus officia recusandae possimus itaque nulla rem iusto quisquam, eius molestias impedit nam, delectus reiciendis cupiditate veniam.</p>
+    <p class="p1">mais um p1</p>
+    <p>Lorem2.</p>
+    <p id="p2"></p>
+    <p data-aula="p3"></p>
+    
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        var dataaula = $("[data-aula=p3]"); //pegando atributo
+        var p1 = $('.p1')[1].remove(); //trata todos os elementos como um array
+        console.log(p1)
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="js">react</div>
+    <div class="js">angular</div>
+    <div class="js">typescript</div>
+    <div class="js">es6</div>
+
+
+    <script>
+
+        var js = document.getElementsByClassName('js')
+
+
+        for (let index = 0; index < js.length; index++) {
+            let texto = js[index].innerHTML;
+            console.log(texto)
+            
+        }
+
+        for (let index = 0; index < js.length; index++) {
+            let texto = js[index].innerHTML;
+            js[index].innerHTML = 'curso ' + texto + ' js';
+            
+        }
+
+
+
+
+        var array = [1,2,'b',4];
+
+        array.forEach(function(element, index){
+            if(element == 1){
+                array[index] = 'vira outra coisa'
+            }
+
+        })
+
+        console.log(array)
+
+
+        //retorna um clone com um incremento com map
+
+        var arrayDois = [1,2,'b',4];
+
+        var nova = arrayDois.map(function(element, index){
+            if(element === 1){
+                element = 'vira outra coisa';
+            }
+
+            return element;
+
+        })
+
+        console.log(array)
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

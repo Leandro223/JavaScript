@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Keyup</title>
+    
+</head>
+<body>
+
+    <input type="text" id="search">
+    <div id="result">Nenhum Resultado</div>
+
+
+    <script>
+        var text = document.getElementById("search")
+        var result = document.getElementById("result")
+        var ResultDefaultText = "Nenhum Resultado";
+
+    
+
+        /*text.addEventListener("keyup", function(){ //a tecla  solta
+            console.log("disparou", this.value)
+            result.innerHTML = this.value;
+
+        })*/
+
+        text.addEventListener("keyup", function(){
+            var value = this.value;
+
+            //result.innerText = valeu !== "" ? value : result //pode ser assim ou com if abaixo
+            if (value !==""){
+                result.innerText = this.value;
+            }else{
+                result.innerText = ResultDefaultText;
+            }
+
+        })
+        
+        
+
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
